@@ -19,7 +19,6 @@ h2   {color: blue;}
 function initialize(){
   blankPos=1;
   stepcount=0;
-  //var today = new Date(0000,00,00,00,00,00);
   startTime = Date.now();
   myTimer = setInterval(updateTime, 1000);
 
@@ -50,7 +49,6 @@ function move(myPos) {
     document.getElementsByTagName("input")[blankPos - 1].value=document.getElementsByTagName("input")[myPos-1].value
     //alert(document.getElementsByTagName("input")[blankPos - 1].id);
     document.getElementsByTagName("input")[myPos-1].value="  ";
-    //alert("abcd")
     blankPos=myPos;
     stepcount+=1;
     stepscount.value=stepcount;
@@ -62,7 +60,6 @@ function move(myPos) {
 }
 
 function check() {
-  //alert("check() is working")
   //for(myPos=1; myPos≤9; myPos++)
 if(button1.value=="1" && button2.value=="2" && button3.value=="3" && button4.value=="4" && button5.value=="5" && button6.value=="6" && button7.value=="7" && button8.value=="8") {
      alert("congratulations");
@@ -72,7 +69,6 @@ if(button1.value=="1" && button2.value=="2" && button3.value=="3" && button4.val
     }
     else {
      return false;
-     //alert("you have not completed the puzzle");
     }
 }
 
